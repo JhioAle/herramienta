@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Registro</title>
+	<link rel="stylesheet" href="css/estiloRegi.css" >
+
+	<script type="text/javascript">
+		function validar(){
+			var form = document.form;
+
+			if (form.matricula, value==0) {
+				form.matricula.value="";
+				form.matricula.focus();
+				return false;
+
+			}
+		}
+	</script>
+</head>
+
+
+<body>
+	<div class="login">
+		<img class="log" src="img/Escudo.jpg" alt="logo UAEM">
+		<br>
+		<br>
+		<h1>Registro</h1>
+		<form method="post" action="insertar.php">
+			<label for="matricula">Usuario:</label>
+			<input id="matricula" type="text" name="matricula" placeholder="Ingrese matricula" required>
+
+			<br>
+
+			<label for="nombre">Nombre(s):</label>
+			<input id="nombre" type="text" name="nombre" placeholder="Ingrese nombre(s)" required>
+
+			<br>
+            
+
+			<label for="apellido">Apellidos:</label>
+			<input id="apellido" type="text" name="apellidos" placeholder="Ingrese Apellidos" required>
+
+			<br>
+
+			<label for="correo">Correo:</label>
+			<input id="correo" type="E-mail" placeholder="Ingrese E-mail" value="" name="correo" required>
+
+			<br>	
+			
+			<label for="contraseña">Contraseña:</label>
+			<input id="contraseña" type="password" name="contraseña" placeholder="Ingrese Contraseña" required>
+
+			<br>
+
+			<label for="semestre">Semestre:</label>
+			<select   name="semestre" id="semestre" style="width: 443px; height: 32px; " required>
+     		<option value="1">1</option>
+     		<option value="2">2</option>
+     		<option value="3">3</option>
+            <option value="4">4</option>
+     		<option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+     		<option value="8">8</option>
+            <option value="8">9</option>     
+     	   </select><br>
+
+			<br>
+
+			<label for="carrera">Carrera:</label>
+			<select   name="carrera" id="carrera" style="width: 443px; height: 32px; " required>
+     		<option value="ICO">ICO</option>
+     		<option value="LIA">LIA</option>
+     		<option value="LCN">LCN</option>
+            <option value="LDI">LDI</option>
+     		<option value="LDE">LDE</option>
+            <option value="LEN">LEN</option>     
+     	   </select><br>
+
+
+			<br>
+
+			<label for="turno">Turno:</label>
+			<select   name="turno" id="turno" style="width: 443px; height: 32px; " required>
+     		<option value="Matutino">Matutino</option>
+     		<option value="Vespertino">Vespertino</option>
+            </select><br>
+
+			<br>
+
+			
+
+			<input type="submit" value="Ingresar">
+
+			<!-- <a href="#">Lost your password?</a> -->
+			<br>
+			<a href="index.html">do you already have an account?</a>
+            <A href="https://docs.google.com/forms/d/e/1FAIpQLScNE3QGZoiX8Wcc211ZJk1bQHi_HrYRviRjKKadLd4__xyDig/viewform">Sign off</a> 
+
+			
+		</form>
+	</div>
+	<script src="js/scriptRegi.js"></script>
+
+</body>
+</html>

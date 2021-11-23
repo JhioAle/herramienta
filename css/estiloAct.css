@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: url(../img/ingles.jpg)  center top;
+	background-size: cover;
+	font-family: sans-serif;
+	height: 100vh;
+}
+
+.login{
+	width: 1000px;
+	height: 1680px;
+	background: url(../img/registro.jpg);
+	color: #fff;
+	top:130%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	box-sizing: border-box;
+	padding: 50px 30px;
+}
+
+
+
+.login h1{
+	margin:0;
+	padding: 0 0 30px;
+	text-align: center;
+	font-size: 22px;
+}
+
+.login label{
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 18px;
+	display: block;
+}
+
+
+.login input[type="submit"]{
+	border:none;
+	outline: none;
+	height: 40px;
+	background: #b80f22;
+	color: #fff;
+	font-size: 18px;
+	border-radius: 20px;
+}
+
+.login a {
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 20px;
+	color: white;
+}
